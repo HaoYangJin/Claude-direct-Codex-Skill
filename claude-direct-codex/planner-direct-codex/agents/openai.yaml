@@ -1,0 +1,6 @@
+interface:
+  display_name: "Planner Directs Codex"
+  short_description: "Generate Codex-ready execution briefs"
+  default_prompt: "Use $planner-direct-codex to turn my request into one Codex-ready task brief I can paste directly into Codex."
+policy:
+  allow_implicit_invocation: false
