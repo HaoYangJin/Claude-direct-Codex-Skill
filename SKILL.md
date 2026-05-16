@@ -1,6 +1,6 @@
 ---
 name: planner-direct-codex
-description: Turn a user's product or engineering goal into one bounded, Codex-ready execution brief that a planning model can output for direct copy/paste. Use when the user wants one model to plan or direct Codex, asks for a `/skill` workflow, mentions copyable prompts, task decomposition, acceptance criteria, or wants the planner to choose the next coding step for another agent.
+description: Creates one bounded Codex brief. Use for "plan a Codex task", "give me a Codex brief", "direct Codex", "/skill planner-direct-codex", "task brief", "copyable prompt", "任务单", or "派活给 Codex".
 ---
 
 # Planner Direct Codex
@@ -17,17 +17,17 @@ If constraints are missing, add only the smallest safe defaults.
 
 ## Produce One Bounded Brief
 
-Always produce:
+Always produce one brief with these section headers exactly:
 
-- one concrete `Goal`
-- one short `Why`
-- `Scope` limited to the current work slice
-- explicit `Out of Scope` boundaries
-- only the constraints that materially affect implementation
-- observable `Acceptance Criteria`
-- concrete `Deliverables`
-- `Validation` that Codex should perform
-- a fixed `Output Format` section
+- `Goal`
+- `Why`
+- `Scope`
+- `Out of Scope`
+- `Constraints`
+- `Acceptance Criteria`
+- `Deliverables`
+- `Validation`
+- `Output Format`
 
 Prefer work items like:
 
@@ -47,17 +47,11 @@ Avoid work items like:
 Use the exact format in `references/codex-brief-template.md`.
 Unless the user explicitly asks for explanation, output only the Codex brief with no preface and no closing sentence.
 Keep the section headers in English exactly as defined in the template so the brief stays stable across rounds.
+Keep the `Output Format` bullets exactly as `Summary`, `Files changed`, `Validation results`, and `Risks or follow-ups` so the paired receiver can answer in a stable shape.
 Keep the contents concise, specific, and directly actionable.
-
-## Slicing Rules
-
-- prefer phase one over a full roadmap
-- preserve existing architecture unless the user asks for structural change
-- if repository details are unknown, tell Codex to inspect before locking implementation details
-- if ambiguity remains, make the smallest reasonable assumption and encode it in `Constraints`
-- if the user asks for several things, choose the current top-priority slice and defer the rest
 
 ## Reference Use
 
 Read `references/codex-brief-template.md` for the exact direct-copy output contract.
+Read `references/slicing-rules.md` when choosing the bounded slice or contributor-maintained slicing policy matters.
 Read `references/example-invocations.md` only when you need examples of how to slice or phrase a request.

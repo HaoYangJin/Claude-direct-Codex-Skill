@@ -41,3 +41,18 @@ Preferred slicing:
 - make the goal review-only
 - ask Codex to prioritize bugs, regressions, and missing tests
 - avoid mixing review with implementation in the same brief
+
+## ML Research Request
+
+User input:
+
+```text
+/skill planner-direct-codex 帮我把多模态论文实验仓库整理一下，先让 Codex 做最能减少实验误差的一步。
+```
+
+Preferred slicing:
+
+- ask Codex to inspect the current experiment scripts, config files, and result artifacts before choosing edits
+- limit scope to one reproducibility slice such as config normalization, seed handling, metric logging, or a results-summary table
+- require validation that is realistic for the repository, such as a dry run, unit check, schema check, or inspection of generated experiment metadata
+- defer new model ideas, full retraining, benchmark claims, and paper-writing changes
