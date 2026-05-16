@@ -1,4 +1,4 @@
-# planner-direct-codex
+# Planner(Claude) Direct Codex Skill
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
