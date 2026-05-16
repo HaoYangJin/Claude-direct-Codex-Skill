@@ -4,6 +4,10 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Skill](https://img.shields.io/badge/skill-planner--direct--codex-purple)
 
+## 教程图 / Tutorial Image
+
+![Claude-direct-Codex workflow tutorial](assets/claude-direct-codex-workflow.png)
+
 ## 中文
 
 `planner-direct-codex` 是一个给规划模型使用的 Claude Skill。它把用户的产品、工程、研究或审查需求压缩成一个边界清晰、可以直接粘贴给 Codex 执行的任务单。
