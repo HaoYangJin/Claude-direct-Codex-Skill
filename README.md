@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Skill](https://img.shields.io/badge/skill-planner--direct--codex-purple)
+![Skill](https://img.shields.io/badge/skill-claude--direct--codex-purple)
 
 ## 教程图 / Tutorial Image
 
