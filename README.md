@@ -15,7 +15,7 @@
 - 你希望任务包含范围、验收标准、验证方式和固定回报格式。
 - 你想把大需求切成第一阶段可执行的最小任务。
 
-### How it pairs with Codex
+### 如何与Codex协作
 
 `planner-direct-codex` 负责在 Claude 侧产出任务单；Codex 侧可以安装配套的 `receive-planner-brief` skill 来读取同一组固定标题，并按 `Summary / Files changed / Validation results / Risks or follow-ups` 的格式回报执行结果。两个 skill 不需要共享代码，但它们共享 brief contract。
 
