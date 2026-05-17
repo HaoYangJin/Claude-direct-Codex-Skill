@@ -51,3 +51,7 @@ Keep each new example in two parts: `User input` and `Preferred slicing`. Inputs
 - Do not change the four `Output Format` items: `Summary`, `Files changed`, `Validation results`, `Risks or follow-ups`.
 - Do not combine unrelated tasks into one example brief.
 - Keep `SKILL.md` short and move expandable detail into `references/`.
+
+## Main-only Maintenance
+
+This repository is maintained directly on `main`; do not create `codex-*` feature branches for routine updates. Keep maintenance logs, local plans, transcripts, cache directories, packaging snapshots, and other generated artifacts out of version control.
