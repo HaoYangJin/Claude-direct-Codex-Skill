@@ -25,3 +25,17 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .npm/
+
+# Maintenance and packaging artifacts
+.package-*/
+*.log
+*.bak
+*.tmp
+*.old
+plans/
+memory/
+sessions/
+transcripts/
+.cache/
+dist/
+build/
